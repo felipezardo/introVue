@@ -5,9 +5,9 @@ import curtido from "../src/assets/heart-icon1.png";
 import { ref } from "vue";
 
 // Criamos um estado reativo para cada imagem
-const curtidoEstado1 = ref(false); // Estado para a primeira seção
-const curtidoEstado2 = ref(false); // Estado para a segunda seção
-const curtidoEstado3 = ref(false); // Estado para a terceira seção
+const curtido1 = ref(false); // Estado para a primeira seção
+const curtido2 = ref(false); // Estado para a segunda seção
+const curtido3 = ref(false); // Estado para a terceira seção
 </script>
 
 <template>
@@ -27,9 +27,9 @@ const curtidoEstado3 = ref(false); // Estado para a terceira seção
         -->
         <!-- Alterando a imagem dinamicamente com @click -->
         <img
-          :src="curtidoEstado1 ? curtido : curtir"
+          :src="curtido1 ? curtido : curtir"
           alt="Botão de Curtida"
-          @click="curtidoEstado1 = !curtidoEstado1"
+          @click="curtido1 = !curtido1"
         />
       </div>
       <h3>O que é Vue.js?</h3>
@@ -45,9 +45,9 @@ const curtidoEstado3 = ref(false); // Estado para a terceira seção
         <h5>Curiosidade</h5>
 
         <img
-          :src="curtidoEstado2 ? curtido : curtir"
+          :src="curtido2 ? curtido : curtir"
           alt="Botão de Curtida"
-          @click="curtidoEstado2 = !curtidoEstado2"
+          @click="curtido2 = !curtido2"
         />
       </div>
       <h3>A Origem do Vue.js</h3>
@@ -62,9 +62,9 @@ const curtidoEstado3 = ref(false); // Estado para a terceira seção
       <div>
         <h5>Funcionalidade</h5>
         <img
-          :src="curtidoEstado3 ? curtido : curtir"
+          :src="curtido3 ? curtido : curtir"
           alt="Botão de Curtida"
-          @click="curtidoEstado3 = !curtidoEstado3"
+          @click="curtido3 = !curtido3"
         />
         
         
